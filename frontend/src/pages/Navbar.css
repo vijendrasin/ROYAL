@@ -1,0 +1,129 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f5f5f5;
+  /* Add a subtle gradient for a modern touch */
+  background-image: linear-gradient(to right, #f5f5f5 0%, #e0e0e0 100%);
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+// Navbar.js
+
+
+
+.navbar-logo {
+  margin-right: 2rem;
+}
+
+.navbar-logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-right: 1rem;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #007bff; /* Blue link color */
+  padding: 0.8rem 1.2rem; /* Increase padding for a more spacious feel */
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #afcadf;
+  /* Add a transition effect for smoother hover */
+  transform: scale(1.02); /* Slight scale-up on hover for emphasis */
+  color: #0056b3; /* Darker blue color on hover */
+}
+
+.navbar-cart {
+  position: relative;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.navbar-cart-img {
+  width: 44px; /* Increase icon size for better visibility */
+  height: 44px;
+  /* Fix for cart image display */
+  /* Replace with your actual image path */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5MMEZL8zXC3lgImdpaKJhFPMGq-6Fjm5SnCEGtSTVo4UE4G1l--yDGcuSQ0pswMiCP4E&usqp=CAU');
+  background-size: cover; /* Ensure image covers entire element */
+}
+
+.navbar-cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 10px;
+  padding: 5px; /* Increase padding for better readability */
+  border-radius: 50%;
+  background-color:#007bff ;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.navbar-search button {
+  padding: 0.7rem 1rem;
+  border: 1px solid #007bff; /* Blue border color */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff; /* Button text color */
+  background-color: #007bff; /* Blue background color */
+}
+
+.navbar-search button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+.notification-badge {
+  position: absolute;
+  top: -7px; /* Adjust top position */
+  left: 35px;
+  background-color: #25c6db;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}

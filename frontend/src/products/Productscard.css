@@ -1,0 +1,79 @@
+/* Productscard.css */
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Product card styles */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 240px; /* Fixed width for each card */
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image styles */
+.product-card img {
+  width:100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Product details styles */
+.product-details {
+  margin-top: 15px;
+}
+
+.product-details h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Product actions styles */
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.product-actions button {
+  background-color: rgb(113, 180, 12);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-actions button:hover {
+  background-color:orange;
+}
